@@ -3,6 +3,7 @@
 
     .download__cards {
         @include fl-c-c;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin: 130px auto;
         max-width: 920px;
@@ -11,6 +12,7 @@
         .card {
             max-width: 283px;
             width: 100%;
+            margin: 0 5px;;
             border-radius: 5px;
             box-shadow: 0px 10px 40px 0px $hoverCards;
             text-align: center;
@@ -52,28 +54,51 @@
             .btn-m {
                 max-width: 240px;
             }
+
             &:first-child {
                 margin-top: -160px;
             }
+
             &:nth-child(2) {
                 margin-top: -80px;
             }
 
-           
+
         }
     }
 }
-
-@media screen and(max-width: 600px) {
+@media screen and(max-width:1080px) {
     .download__inner {
         .download__cards {
-            width: 400px;
-     align-items:center;
-     justify-content: center;
-     .card{
-        flex: 1;
-     }
-         }
+            margin: 50px auto;
+            .card {
+                &:first-child, &:nth-child(2), &:last-child {
+                    margin-top: 50px;
+                }
+            }
+        }
     }
- 
+    
+}
+@media screen and(max-width: 600px) {
+    .download__inner {
+        padding: 0;
+
+        .title {
+            margin: 6px 0;
+        }
+
+        .download__cards {
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+
+            .card {
+                &:first-child, &:nth-child(2), &:last-child {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
 }
