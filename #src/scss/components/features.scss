@@ -61,13 +61,13 @@
                 padding: 0;
                 padding: 25px 0;
 
-                h4 {
+                span {
                     color: $mainTextColor;
                     font-size: 18px;
                     font-weight: 400;
                 }
 
-                &:hover h4 {
+                &:hover span {
                     color: $accentColor;
                 }
             }
@@ -126,7 +126,7 @@
                     width: 150px;
                     padding: 19px 0;
 
-                    h4 {
+                    span {
                         font-size: 16px;
                     }
 
@@ -169,7 +169,6 @@
                     img {
                         width: 315px;
                         margin-left: initial;
-
                     }
 
                     .contentImg__rectangle {

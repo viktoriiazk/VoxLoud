@@ -477,13 +477,13 @@ button.burger-menu span:hover {
   padding: 25px 0;
 }
 
-.features__inner .features__tabs .tab-links .tabItem h4 {
+.features__inner .features__tabs .tab-links .tabItem span {
   color: #9194A1;
   font-size: 18px;
   font-weight: 400;
 }
 
-.features__inner .features__tabs .tab-links .tabItem:hover h4 {
+.features__inner .features__tabs .tab-links .tabItem:hover span {
   color: #FA5757;
 }
 
@@ -1035,7 +1035,7 @@ body {
     padding: 19px 0;
   }
 
-  .features__inner .features__tabs .tab-links .tabItem h4 {
+  .features__inner .features__tabs .tab-links .tabItem span {
     font-size: 16px;
   }
 
