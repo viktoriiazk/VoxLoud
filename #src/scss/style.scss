@@ -1,0 +1,24 @@
+@import 'core/module';
+@import 'components/module.scss';
+
+body {
+    font-size: 18px;
+    color: $mainTextColor; 
+   @extend %rubik-reg;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 1rem ;
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+
+
+
+
+

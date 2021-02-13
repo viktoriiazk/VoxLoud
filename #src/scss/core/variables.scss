@@ -1,0 +1,28 @@
+$chetwodeBlue: #7D8DE3;
+$carnation: #FA5757;
+$manatee: #9194A1;
+$ebonyClay: #252B46;
+$lightBlack: rgba(36,41,70,.9);
+$lightBlue: rgba(125, 140, 227, 0.4);
+$white: #fff;
+$alabaster: #F7F7F7;
+$transparent: transparent;
+
+
+$mainTextColor: $manatee;
+$mainBoldTextColor: $ebonyClay;
+$accentColor: $carnation;
+$companyMainColor: $chetwodeBlue;
+$hoverColor: $lightBlack;
+$hoverCards: $lightBlue;
+$btnLight: $alabaster;
+
+
+
+%rubik-medium{
+    font-family: "Rubik-Medium" ;
+}
+%rubik-reg{
+    font-family: "Rubik-Regular" ;
+}
+

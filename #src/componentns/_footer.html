@@ -1,0 +1,56 @@
+</main>
+    <footer>
+        <div class="container">
+       
+           <div class="footer">
+               <div class="footer__left">
+                <div class="logo">
+                    <a href="#"><img src="../img/header/logo-bookmark.svg" alt="BOOKMARK logo"></a>
+                </div>
+                   <nav class="navigation">
+                       <ul class="navigation__list">
+                        <li>
+                            <a href="#bfeatures">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                       </ul>
+                   </nav>
+               </div>
+               <div class="footer__right">
+                   <a href="#"><img src="../img/socials/icon-facebook.svg" target="blanket" alt="facebook logo"></a>
+                   <a href="#"><img src="../img/socials/icon-twitter.svg" target="blanket" alt="twitter logo"></a>
+               </div>
+           </div>
+           <div class="copyright">
+               <span>Challenge by Voxloud</span>
+               <span>Coded by Viktoriia Zakorchemna</span>
+           </div>
+        </div>
+
+    </footer>
+
+    <script>
+        document.querySelectorAll('.js-anchor[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

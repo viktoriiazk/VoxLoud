@@ -1,0 +1,79 @@
+.download__inner {
+    padding: 85px;
+
+    .download__cards {
+        @include fl-c-c;
+        flex-wrap: wrap;
+        margin: 130px auto;
+        max-width: 920px;
+        width: 100%;
+
+        .card {
+            max-width: 283px;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 10px 40px 0px $hoverCards;
+            text-align: center;
+
+            &__logo {
+                display: block;
+                margin: 50px auto 32px;
+            }
+
+            h6 {
+                @extend %rubik-medium;
+                font-size: 20px;
+                color: $mainBoldTextColor;
+            }
+
+            span {
+                font-size: 15px;
+                display: block;
+                margin-top: 16px;
+            }
+
+            &__dots {
+                margin-top: 40px;
+            }
+
+            .btn {
+
+                @include btn($companyMainColor, $companyMainColor, $white);
+                padding: 16px 22px;
+                margin: 16px auto;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $white;
+                    color: $mainBoldTextColor;
+                }
+            }
+
+            .btn-m {
+                max-width: 240px;
+            }
+            &:first-child {
+                margin-top: -160px;
+            }
+            &:nth-child(2) {
+                margin-top: -80px;
+            }
+
+           
+        }
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .download__inner {
+        .download__cards {
+            width: 400px;
+     align-items:center;
+     justify-content: center;
+     .card{
+        flex: 1;
+     }
+         }
+    }
+ 
+}

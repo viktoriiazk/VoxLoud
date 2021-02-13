@@ -1,0 +1,156 @@
+.footer {
+    padding-top: 1rem;
+    background: $accent-color;
+    color: $def-white;
+    font-size: 18px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+
+        @include mq('tablet-wide') {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include mq('tablet') {
+            justify-content: start;
+        }
+
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mq('tablet-wide') {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__addres {
+        max-width: 412px;
+        padding-left: 2rem;
+        line-height: 1.5;
+        background: url('../../img/footer/geo.svg') center left / 20px no-repeat;
+
+        @include mq('tablet') {
+            max-width: 300px;
+            text-align: start;
+            padding-left: 35px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-left: 8%;
+            // padding-top: 22px;
+        }
+    }
+
+    &__socials {
+        margin-top: 1.5rem;
+
+        @include mq ('tablet') {
+            justify-content: space-evenly;
+            width: 100%;
+            .socials__item+.socials__item {
+                margin: 0.5rem;
+
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+
+        a+a {
+            margin-top: 1.5rem;
+        }
+
+        @include mq ('tablet-wide') {
+            line-height: 1;
+
+            a+a {
+                margin-top: 1 rem;
+                line-height: 2;
+            }
+
+        }
+
+        @include mq('tablet') {
+            width: auto;
+            padding: 20px 0;
+            text-align: start;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-left: 8%;
+        }
+    }
+
+    &__mail {
+        padding-left: 2rem;
+        background: url('../../img/footer/mail.svg') center left / 20px no-repeat;
+    }
+
+    &__phone {
+        padding-left: 2rem;
+        background: url('../../img/footer/phone.svg') center left / 20px no-repeat;
+    }
+
+}
+
+.copywrite {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+    padding-bottom: 5px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        @include mq('tablet') {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        text-align: center;
+
+        @include mq('tablet') {
+            position: absolute;
+            top: 0;
+            padding: 20px 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+        }
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+
+        img {
+            margin-left: 12px;
+        }
+
+        @include mq ('tablet') {
+            margin-top: 50px;
+            font-size: 0.8rem;
+        }
+    }
+}

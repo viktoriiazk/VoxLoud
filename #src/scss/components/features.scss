@@ -1,0 +1,206 @@
+.features__inner {
+    margin: 70px 0;
+
+    .features__tabs {
+
+        .content {
+            display: none;
+            width: 100%;
+
+            .contentImg__rectangle {
+                left: -165px;
+                top: 5rem;
+                border-radius: 0 180px 180px 0;
+            }
+
+            &__text {
+                padding-top: 90px;
+                margin-left: 40px;
+
+                h5 {
+                    @extend %rubik-medium;
+                    font-size: 30px;
+                    color: $mainBoldTextColor;
+                    letter-spacing: 1px;
+                    text-align: start;
+                }
+
+                p {
+                    max-width: 475px;
+                    margin-top: 25px;
+                    line-height: 28px;
+                }
+
+                .btn {
+                    @include btn($companyMainColor, $companyMainColor, $white);
+                    padding: 14px 28px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $white;
+                        color: $mainBoldTextColor;
+                    }
+                }
+            }
+        }
+
+        .content.active {
+            @include fl-c-c;
+        }
+
+        .tab-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px auto;
+            max-width: 730px;
+            border-bottom: 1px solid $mainTextColor;
+            text-align: center;
+
+            .tabItem {
+                width: 250px;
+                padding: 0;
+                padding: 25px 0;
+
+                h4 {
+                    color: $mainTextColor;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+                &:hover h4 {
+                    color: $accentColor;
+                }
+            }
+
+            .tabItem.active {
+                border-bottom: 4px solid $accentColor;
+
+                h4 {
+                    color: $mainBoldTextColor;
+                }
+            }
+        }
+    }
+
+}
+
+.title {
+    @extend %rubik-medium;
+    margin: 32px 0;
+    font-size: 33px;
+    text-align: center;
+    color: $mainBoldTextColor;
+}
+
+.subtitle {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+}
+
+@media screen and(max-width:600px) {
+    .title {
+        margin: 15px 0;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        max-width: 317px;
+        word-spacing: 2px;
+    }
+
+    .features__inner {
+        .features__tabs {
+            .tab-links {
+                flex-direction: column;
+                margin: 38px auto;
+                align-items: center;
+                border: none;
+
+                .tabItem {
+                    position: relative;
+                    width: 150px;
+                    padding: 19px 0;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                        width: calc(100vw - 50px);
+                        height: 1px;
+                        background-color: $mainTextColor;
+                    }
+
+                    &:last-child {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            bottom: -4px;
+                            left: 50%;
+                            transform: translate(-50%);
+                            width: calc(100vw - 50px);
+                            height: 1px;
+                            background-color: $mainTextColor;
+                        }
+                    }
+                }
+
+            }
+
+            .content {
+                flex-direction: column;
+                margin-top: 75px;
+
+                &__img {
+                    max-width: initial;
+
+                    img {
+                        width: 315px;
+                        margin-left: initial;
+
+                    }
+
+                    .contentImg__rectangle {
+                        width: 27rem;
+                        top: 2rem;
+                    }
+                }
+
+                &__text {
+                    max-width: 300px;
+                    padding-top: 85px;
+                    margin-left: initial;
+
+                    h5 {
+                        font-size: 22px;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin-top: 11px;
+                        line-height: 26px;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+
+                    .btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
