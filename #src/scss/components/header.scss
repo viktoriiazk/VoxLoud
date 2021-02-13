@@ -6,6 +6,7 @@ h1.logo_SEO {
   margin: 0 30px;
   @include fl-c-c;
   padding: 48px 0;
+
   .burger-menu {
     display: none;
   }
@@ -58,6 +59,7 @@ h1.logo_SEO {
     @include btn($accentColor, $accentColor, $white);
     letter-spacing: 2px;
     text-transform: uppercase;
+
     &:hover {
       transition: 0.2s;
       @include btn($accentColor, $transparent, $accentColor);
@@ -86,7 +88,6 @@ button.burger-menu span {
   }
 }
 
-
 #burgerBtn.open span:nth-child(1) {
   transform: rotate(45deg);
 
@@ -99,19 +100,25 @@ button.burger-menu span {
 
 #burgerBtn.open span:nth-child(3) {
   transform: rotate(-45deg);
-margin-top: -10px;
+  margin-top: -10px;
 }
 
-#burgerBtn.open span{
+#burgerBtn.open span {
   transition: 1s;
   background-color: $white;
 }
-
 
 .toggleMenu {
   display: none;
 }
 
+.logo {
+  display: block;
+
+  .filter-white {
+    filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(200deg) brightness(107%) contrast(100%);
+  }
+}
 
 @media screen and (max-width:600px) {
   .header__inner {
@@ -125,9 +132,11 @@ margin-top: -10px;
       z-index: 2;
       position: relative;
     }
-.active {
-  background-color: $white;
-}
+
+    .active {
+      background-color: $white;
+    }
+
     .navigation {
       max-width: initial;
     }
@@ -156,6 +165,7 @@ margin-top: -10px;
           height: 1px;
           background-color: $mainTextColor;
         }
+
         &:hover {
           transition: 0.2s;
           color: $accentColor;
@@ -193,13 +203,7 @@ margin-top: -10px;
     }
 
     .header__menu {
-      .logo {
-        display: block;
 
-        .filter-white {
-          filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(200deg) brightness(107%) contrast(100%);
-        }
-      }
       .social {
         display: flex;
         justify-content: center;
@@ -222,58 +226,3 @@ margin-top: -10px;
   }
 
 }
-
-// /* скрываем чекбокс */
-// #menu__toggle {
-// position: absolute;
-
-//   opacity: 0;
-// }
-// /* стилизуем кнопку */
-// .menu__btn {
-//   display: none; 
-//   align-items: center; 
-//       left: 20px;
-//   width: 26px;
-//   height: 26px;
-//   cursor: pointer;
-//   z-index: 1000;
-//   position: relative;
-// }
-// /* добавляем "гамбургер" */
-// .menu__btn > span,
-// .menu__btn > span::before,
-// .menu__btn > span::after {
-//   display: block;
-//   position: absolute;
-//   width: 100%;
-//   height: 2px;
-//   background-color: #616161;
-// }
-// .menu__btn > span::before {
-//   content: '';
-//   top: -8px;
-// }
-// .menu__btn > span::after {
-//   content: '';
-//   top: 8px;
-// }
-// #menu__toggle:checked ~ .menu__btn > span {
-//     transform: rotate(45deg);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::before {
-//     top: 0;
-//     transform: rotate(0);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::after {
-//     top: 0;
-//     transform: rotate(90deg);
-//   }
-//   #menu__toggle:checked ~ .menu__box {
-//     visibility: visible;
-//     left: 0;
-//   }
-
-//   #menu__toggle:checked ~  .menu-header{
-//       transform: translateY(90px);
-//   }

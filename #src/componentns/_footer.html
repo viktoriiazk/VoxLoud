@@ -1,14 +1,14 @@
 </main>
-    <footer>
-        <div class="container">
-       
-           <div class="footer">
-               <div class="footer__left">
+<footer>
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__left">
                 <div class="logo">
-                    <a href="#"><img src="../img/header/logo-bookmark.svg" alt="BOOKMARK logo"></a>
+                    <a href="#"><img clas="filter-white" src="../img/header/logo-bookmark.svg" alt="BOOKMARK logo"></a>
                 </div>
-                   <nav class="navigation">
-                       <ul class="navigation__list">
+                <nav class="navigation">
+                    <ul class="navigation__list">
                         <li>
                             <a href="#bfeatures">
                                 Features
@@ -24,33 +24,34 @@
                                 Contact
                             </a>
                         </li>
-                       </ul>
-                   </nav>
-               </div>
-               <div class="footer__right">
-                   <a href="#"><img src="../img/socials/icon-facebook.svg" target="blanket" alt="facebook logo"></a>
-                   <a href="#"><img src="../img/socials/icon-twitter.svg" target="blanket" alt="twitter logo"></a>
-               </div>
-           </div>
-           <div class="copyright">
-               <span>Challenge by Voxloud</span>
-               <span>Coded by Viktoriia Zakorchemna</span>
-           </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__right">
+                <a href="#"><img src="../img/socials/icon-facebook.svg" target="blanket" alt="facebook logo"></a>
+                <a href="#"><img src="../img/socials/icon-twitter.svg" target="blanket" alt="twitter logo"></a>
+            </div>
         </div>
+        <div class="copyright">
+            <span>Challenge by Voxloud</span>
+            <span>Coded by Viktoriia Zakorchemna</span>
+        </div>
+    </div>
 
-    </footer>
+</footer>
 
-    <script>
-        document.querySelectorAll('.js-anchor[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+<script>
+    document.querySelectorAll('.js-anchor[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
 
-        </script>
-    <script src="js/script.js"></script>
+</script>
+<script src="js/script.js"></script>
 </body>
+
 </html>
