@@ -50,3 +50,16 @@ var openQuestion = function openQuestion(evt, question) {
   document.getElementById(question).style.display = "block";
   evt.currentTarget.className += " active";
 };
+
+;
+var inputEmail = document.getElementById('email');
+var error = document.getElementById('error');
+inputEmail.oninvalid = invalid;
+
+function invalid(event) {
+  error.removeAttribute('hidden');
+  inputEmail.classList = 'error';
+  event.preventDefault();
+}
+
+;

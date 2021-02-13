@@ -11,5 +11,5 @@ const openQuestion = (evt, question) => {
     document.getElementById(question).style.display = "block";
     evt.currentTarget.className += " active";
 
-}
+};
 
