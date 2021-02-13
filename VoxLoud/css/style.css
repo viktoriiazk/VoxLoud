@@ -692,22 +692,28 @@ button.burger-menu span:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: start;
 }
 
 .contacts__inner form label {
   display: none;
 }
 
-.contacts__inner form input[type="email"] {
-  display: block;
+.contacts__inner form .email-wrap {
+  display: flex;
+  flex-direction: column;
   max-width: 300px;
   width: 100%;
+}
+
+.contacts__inner form input[type="email"] {
+  display: block;
   padding: 15px 10px;
   border-radius: 5px;
   border: none;
-  background-image: url(../../img/contactSection/icon-error.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
+  cursor: pointer;
 }
 
 .contacts__inner form input[type="email"]::placeholder {
@@ -748,6 +754,7 @@ button.burger-menu span:hover {
 .contacts .error-mesage {
   margin-top: -3px;
   max-width: 300px;
+  width: 100%;
   background-color: #FA5757;
   border-radius: 0 0 5px 5px;
 }
@@ -1066,6 +1073,7 @@ body {
 
   .faq__inner {
     margin-top: 120px;
+    margin-bottom: 115px;
   }
 
   .faq__inner .title {
@@ -1084,5 +1092,22 @@ body {
 
   .faq__inner .question__item .question__answer p {
     line-height: 30px;
+  }
+
+  .contacts__inner p {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .contacts__inner form {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .contacts__inner form .btn {
+    margin-top: 10px;
+    max-width: 300px;
+    width: 100%;
   }
 }

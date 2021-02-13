@@ -253,13 +253,16 @@
       <p>Stay up-to-date with what we’re doing</p>
       <form action="#" method="post">
         <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="Enter your email adress">
-
+        <div class="email-wrap">
+          <input type="email" id="email" name="email" placeholder="Enter your email adress">
+          <div class="error-mesage error" id="error" hidden>
+            <p>Whoops, make sure it's an email</p>
+          </div>
+        </div>
         <button type="submit" value="Contact" class="btn ">Contact Us</button>
+
       </form>
-      <div class="error-mesage error" id="error" hidden>
-        <p>Whoops, make sure it's an email</p>
-      </div>
+
     </div>
   </div>
 </div>
