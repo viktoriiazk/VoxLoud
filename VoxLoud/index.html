@@ -187,41 +187,63 @@
     </div>
 </div>
     <div class="faq">
-    <h3> Frequently Asked Questions</h3>
-    <p> Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-    <div class="faq__questions">
-<div class="questions">
-    <div class="question">
-        <h6> What is Bookmark?</h6>
-        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
-        <div class="question__answer">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-        </div>
-    </div>
-    <div class="question">
-        <h6> How can I request a new browser? </h6>
-        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
-        <div class="question__answer">
-            <p>  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-        </div>
-    </div>
-    <div class="question">
-        <h6> Is there a mobile app?</h6>
-        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
-        <div class="question__answer">
-            <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
-        </div>
-    </div>
-    <div class="question">
-        <h6> What about other Chromium browsers?</h6>
-        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
-        <div class="question__answer">
-            <p> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
-        </div>
-    </div>
-</div>
-<button>More Info</button>
+    <div class="container">
+        <div class="faq__inner">
+            <h3 class="title"> Frequently Asked Questions</h3>
+            <p class="subtitle"> Here are some of our FAQs. If you have any other questions you’d like answered please
+                feel free to email us.</p>
+            <div class="faq__questions">
+                <div class="question__item">
+                    <div class="question__row tabQuestion" onclick="openQuestion(event, 'question1')">
+                        <h6> What is Bookmark?</h6>
+                        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
+                    </div>
+                    <div id="question1" class="question__answer tabAnswer">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
+                            ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                    </div>
+                </div>
+                <div class="question__item">
+                    <div class="question__row tabQuestion " onclick="openQuestion(event, 'question2')">
+                        <h6> How can I request a new browser? </h6>
+                        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
+                    </div>
 
+                    <div id="question2" class="question__answer tabAnswer active">
+                        <p> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                <div class="question__item">
+                    <div class="question__row tabQuestion" onclick="openQuestion(event, 'question3')">
+                        <h6> Is there a mobile app?</h6>
+                        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
+                    </div>
+
+                    <div id="question3" class="question__answer tabAnswer">
+                        <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+                            condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra
+                            purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                    </div>
+                </div>
+                <div class="question__item">
+                    <div class="question__row tabQuestion" onclick="openQuestion(event, 'question4')">
+                        <h6> What about other Chromium browsers?</h6>
+                        <img src="../img/FAQSection/icon-arrow.svg" alt="arrow iccon">
+                    </div>
+
+                    <div id="question4" class="question__answer tabAnswer">
+                        <p> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+                            Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    </div>
+                </div>
+
+                <button class="btn">More Info</button>
+
+            </div>
+        </div>
     </div>
 </div>
     <div class="contacts">

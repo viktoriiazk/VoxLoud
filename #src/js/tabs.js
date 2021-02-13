@@ -1,4 +1,4 @@
-const openTab = (evt, cityName) =>{
+const openTab = (evt, tabs) =>{
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -8,6 +8,6 @@ const openTab = (evt, cityName) =>{
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "flex";
+  document.getElementById(tabs).style.display = "flex";
   evt.currentTarget.className += " active";
 }

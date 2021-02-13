@@ -15,7 +15,7 @@ var toggleMenu = function toggleMenu() {
 
 ;
 
-var openTab = function openTab(evt, cityName) {
+var openTab = function openTab(evt, tabs) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
 
@@ -29,6 +29,24 @@ var openTab = function openTab(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  document.getElementById(cityName).style.display = "flex";
+  document.getElementById(tabs).style.display = "flex";
+  evt.currentTarget.className += " active";
+};
+
+var openQuestion = function openQuestion(evt, question) {
+  var i, tabAnswer, tabQuestion;
+  tabAnswer = document.getElementsByClassName("tabAnswer");
+
+  for (i = 0; i < tabAnswer.length; i++) {
+    tabAnswer[i].style.display = "none";
+  }
+
+  tabQuestion = document.getElementsByClassName("tabQuestion");
+
+  for (i = 0; i < tabQuestion.length; i++) {
+    tabQuestion[i].className = tabQuestion[i].className.replace(" active", "");
+  }
+
+  document.getElementById(question).style.display = "block";
   evt.currentTarget.className += " active";
 };
