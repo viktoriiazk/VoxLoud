@@ -48,10 +48,6 @@
                     color: $mainBoldTextColor;
                 }
 
-                &:hover h6 {
-                    color: $accentColor;
-                    cursor: pointer;
-                }
             }
 
             .tabQuestion.active img {
@@ -78,11 +74,7 @@
         margin: 48px auto;
         padding: 16px 28px;
 
-        &:hover {
-            cursor: pointer;
-            background-color: $white;
-            color: $mainBoldTextColor;
-        }
+
     }
 
 }
@@ -110,6 +102,24 @@
                     line-height: 30px;
                 }
             }
+        }
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .question__row {
+
+        &:hover h6 {
+            color: $accentColor;
+            cursor: pointer;
+        }
+    }
+
+    .btn {
+        &:hover {
+            cursor: pointer;
+            background-color: $white;
+            color: $mainBoldTextColor;
         }
     }
 }

@@ -35,11 +35,7 @@
                     @include btn($companyMainColor, $companyMainColor, $white);
                     padding: 14px 28px;
 
-                    &:hover {
-                        cursor: pointer;
-                        background-color: $white;
-                        color: $mainBoldTextColor;
-                    }
+
                 }
             }
         }
@@ -67,9 +63,6 @@
                     font-weight: 400;
                 }
 
-                &:hover span {
-                    color: $accentColor;
-                }
             }
 
             .tabItem.active {
@@ -202,4 +195,21 @@
         }
     }
 
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .btn {
+        &:hover {
+            cursor: pointer;
+            background-color: $white;
+            color: $mainBoldTextColor;
+        }
+    }
+
+    .tabItem {
+
+        &:hover span {
+            color: $accentColor;
+        }
+    }
 }

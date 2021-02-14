@@ -354,12 +354,6 @@ button.burger-menu span:hover {
   padding: 16px 22px;
 }
 
-.content__text .btn:first-child:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #252B46;
-}
-
 .content__text .btn:last-child {
   display: block;
   padding: 10px 30px;
@@ -369,12 +363,6 @@ button.burger-menu span:hover {
   color: #9194A1;
   color: #252B46;
   padding: 16px 22px;
-}
-
-.content__text .btn:last-child:hover {
-  cursor: pointer;
-  background-color: #fff;
-  border-color: #9194A1;
 }
 
 .content__text-btn {
@@ -433,12 +421,6 @@ button.burger-menu span:hover {
   padding: 14px 28px;
 }
 
-.features__inner .features__tabs .content__text .btn:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #252B46;
-}
-
 .features__inner .features__tabs .content.active {
   display: flex;
   justify-content: space-between;
@@ -464,10 +446,6 @@ button.burger-menu span:hover {
   color: #9194A1;
   font-size: 18px;
   font-weight: 400;
-}
-
-.features__inner .features__tabs .tab-links .tabItem:hover span {
-  color: #FA5757;
 }
 
 .features__inner .features__tabs .tab-links .tabItem.active {
@@ -620,11 +598,6 @@ button.burger-menu span:hover {
   color: #252B46;
 }
 
-.faq__inner .faq__questions .question__item .question__row:hover h6 {
-  color: #FA5757;
-  cursor: pointer;
-}
-
 .faq__inner .faq__questions .question__item .tabQuestion.active img {
   transform: rotate(180deg);
   filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);
@@ -648,12 +621,6 @@ button.burger-menu span:hover {
   color: #fff;
   margin: 48px auto;
   padding: 16px 28px;
-}
-
-.faq__inner .btn:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #252B46;
 }
 
 .contacts {
@@ -735,13 +702,6 @@ button.burger-menu span:hover {
   max-width: 130px;
 }
 
-.contacts__inner form .btn:hover {
-  transition: .2s;
-  background-color: #fff;
-  color: #FA5757;
-  cursor: pointer;
-}
-
 .contacts .error-mesage {
   margin-top: -3px;
   max-width: 300px;
@@ -795,11 +755,6 @@ footer .footer__inner .footer__right {
   align-items: center;
   max-width: 88px;
   width: 100%;
-}
-
-footer .footer__inner .footer__right a:hover {
-  transition: .2s;
-  filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);
 }
 
 footer .copyright {
@@ -882,11 +837,6 @@ body {
     width: 100%;
     height: 1px;
     background-color: #9194A1;
-  }
-
-  .header__inner .navigation__list li:hover {
-    transition: 0.2s;
-    color: #FA5757;
   }
 
   .header__inner #toggleMenu {
@@ -1183,5 +1133,62 @@ body {
     transition: 0.2s;
     color: #FA5757;
     cursor: pointer;
+  }
+
+  .header__inner li:hover {
+    transition: 0.2s;
+    color: #FA5757;
+  }
+
+  .btn:first-child:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #252B46;
+  }
+
+  .btn:last-child:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #9194A1;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #252B46;
+  }
+
+  .tabItem:hover span {
+    color: #FA5757;
+  }
+
+  .btn:hover {
+    transition: .2s;
+    background-color: #fff;
+    color: #FA5757;
+    cursor: pointer;
+  }
+
+  .question__row:hover h6 {
+    color: #FA5757;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #252B46;
+  }
+
+  .btn:hover {
+    transition: .2s;
+    background-color: #fff;
+    color: #FA5757;
+    cursor: pointer;
+  }
+
+  .footer__right a:hover {
+    transition: .2s;
+    filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);
   }
 }

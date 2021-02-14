@@ -7,6 +7,7 @@
     }
 
 }
+
 .content {
     @include fl-c-c;
 
@@ -60,23 +61,12 @@
             @include btn($companyMainColor, $companyMainColor, $white);
             padding: 16px 22px;
 
-            &:hover {
-                cursor: pointer;
-                background-color: $white;
-                color: $mainBoldTextColor;
-            }
         }
 
         .btn:last-child {
             @include btn($btnLight, $btnLight, $mainTextColor);
             color: $mainBoldTextColor;
             padding: 16px 22px;
-
-            &:hover {
-                cursor: pointer;
-                background-color: $white;
-                border-color: $mainTextColor;
-            }
         }
 
         &-btn {
@@ -149,5 +139,24 @@
 
     .btn-m {
         max-width: 150px;
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .btn:first-child {
+        &:hover {
+            cursor: pointer;
+            background-color: $white;
+            color: $mainBoldTextColor;
+        }
+    }
+
+    .btn:last-child {
+
+        &:hover {
+            cursor: pointer;
+            background-color: $white;
+            border-color: $mainTextColor;
+        }
     }
 }

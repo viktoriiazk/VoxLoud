@@ -31,13 +31,6 @@ footer {
             max-width: 88px;
             width: 100%;
 
-            a {
-                &:hover {
-                    transition: .2s;
-                    filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);
-
-                }
-            }
         }
     }
 
@@ -70,4 +63,14 @@ footer {
         }
     }
 
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .footer__right {
+        a:hover {
+            transition: .2s;
+            filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);
+
+        }
+    }
 }

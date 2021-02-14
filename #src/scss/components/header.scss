@@ -152,10 +152,6 @@ button.burger-menu span {
           background-color: $mainTextColor;
         }
 
-        &:hover {
-          transition: 0.2s;
-          color: $accentColor;
-        }
       }
     }
 
@@ -224,6 +220,12 @@ button.burger-menu span {
       transition: 0.2s;
       color: $accentColor;
       cursor: pointer;
+    }
+  }
+  .header__inner {
+    li:hover {
+      transition: 0.2s;
+      color: $accentColor;
     }
   }
 }

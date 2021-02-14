@@ -67,12 +67,7 @@
                 padding: 15px 28px;
                 max-width: 130px;
 
-                &:hover {
-                    transition: .2s;
-                    background-color: $white;
-                    color: $accentColor;
-                    cursor: pointer;
-                }
+
             }
 
         }
@@ -115,5 +110,14 @@
             }
         }
 
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .btn:hover {
+        transition: .2s;
+        background-color: $white;
+        color: $accentColor;
+        cursor: pointer;
     }
 }
