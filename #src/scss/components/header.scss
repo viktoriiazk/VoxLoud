@@ -42,11 +42,6 @@ h1.logo_SEO {
       text-transform: uppercase;
       letter-spacing: 1px;
 
-      &:hover {
-        transition: 0.2s;
-        color: $accentColor;
-        cursor: pointer;
-      }
     }
   }
 
@@ -59,11 +54,6 @@ h1.logo_SEO {
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    &:hover {
-      transition: 0.2s;
-      @include btn($accentColor, $transparent, $accentColor);
-      cursor: pointer;
-    }
   }
 
 }
@@ -221,4 +211,19 @@ button.burger-menu span {
     }
   }
 
+}
+@media(hover: hover) and (pointer: fine) {
+
+  .btn:hover {
+    transition: 0.2s;
+    @include btn($accentColor, $transparent, $accentColor);
+    cursor: pointer;
+  }
+  .navigation {
+    li:hover {
+      transition: 0.2s;
+      color: $accentColor;
+      cursor: pointer;
+    }
+  }
 }

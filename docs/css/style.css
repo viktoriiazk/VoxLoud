@@ -219,12 +219,6 @@ h1.logo_SEO {
   letter-spacing: 1px;
 }
 
-.navigation__list li:hover {
-  transition: 0.2s;
-  color: #FA5757;
-  cursor: pointer;
-}
-
 .navigation .social {
   display: none;
 }
@@ -238,17 +232,6 @@ h1.logo_SEO {
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.navigation .btn:hover {
-  transition: 0.2s;
-  display: block;
-  padding: 10px 30px;
-  border: 1px solid #FA5757;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #FA5757;
-  cursor: pointer;
 }
 
 .btn-s {
@@ -1181,5 +1164,24 @@ body {
 
   .footer__inner .footer__right {
     margin-top: 17px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    transition: 0.2s;
+    display: block;
+    padding: 10px 30px;
+    border: 1px solid #FA5757;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FA5757;
+    cursor: pointer;
+  }
+
+  .navigation li:hover {
+    transition: 0.2s;
+    color: #FA5757;
+    cursor: pointer;
   }
 }
