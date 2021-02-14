@@ -1,4 +1,4 @@
-let project_folder = require("path").basename(__dirname);
+let project_folder = "docs";
 let source_folder = "#src";
 
 let fs = require("fs");
@@ -186,7 +186,7 @@ function fontsStyle(params) {
             c_fontname = fontname;
           }
         }
-      })
+      });
     }
   }
 function cb() {}
