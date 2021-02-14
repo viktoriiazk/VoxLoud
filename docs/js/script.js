@@ -1,21 +1,19 @@
 "use strict";
 
 var bodyTag = document.getElementById('body');
-var htmlTag = document.getElementById('html');
 var burgerBtn = document.getElementById('burgerBtn');
 var toggle = document.getElementById('toggleMenu');
 
 var toggleMenu = function toggleMenu() {
   if (toggle.style.display == 'block') {
     bodyTag.style.overflowY = "scroll";
-    htmlTag.style.overflowY = "scroll";
+    bodyTag.classList.remove('hiddenScroll');
     toggle.style.display = 'none';
     burgerBtn.classList.remove('open');
   } else {
     toggle.style.display = 'block';
     burgerBtn.classList.add('open');
-    bodyTag.style.overflowY = "hidden";
-    htmlTag.style.overflowY = "hidden";
+    bodyTag.classList.add('hiddenScroll');
   }
 };
 

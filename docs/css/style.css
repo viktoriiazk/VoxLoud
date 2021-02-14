@@ -778,6 +778,12 @@ body {
   margin: 0 auto;
 }
 
+body.hiddenScroll {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 @media screen and (max-width: 1080px) {
   .download__inner .download__cards {
     margin: 50px auto;
