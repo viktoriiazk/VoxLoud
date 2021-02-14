@@ -862,7 +862,7 @@ body {
   .header__inner .burger-menu {
     display: block;
     padding: initial;
-    z-index: 2;
+    z-index: 11;
     position: relative;
   }
 
