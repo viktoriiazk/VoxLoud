@@ -1,15 +1,18 @@
 "use strict";
 
+var bodyTag = document.getElementById('body');
 var burgerBtn = document.getElementById('burgerBtn');
 var toggle = document.getElementById('toggleMenu');
 
 var toggleMenu = function toggleMenu() {
   if (toggle.style.display == 'block') {
+    bodyTag.style.overflowY = "scroll";
     toggle.style.display = 'none';
     burgerBtn.classList.remove('open');
   } else {
     toggle.style.display = 'block';
     burgerBtn.classList.add('open');
+    bodyTag.style.overflowY = "hidden";
   }
 };
 
