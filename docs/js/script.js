@@ -3,6 +3,7 @@
 var bodyTag = document.getElementById('body');
 var burgerBtn = document.getElementById('burgerBtn');
 var toggle = document.getElementById('toggleMenu');
+var logo = document.getElementById('logo');
 
 var toggleMenu = function toggleMenu() {
   if (toggle.style.display == 'block') {
@@ -10,10 +11,12 @@ var toggleMenu = function toggleMenu() {
     bodyTag.classList.remove('hiddenScroll');
     toggle.style.display = 'none';
     burgerBtn.classList.remove('open');
+    logo.classList.remove('filter-white');
   } else {
     toggle.style.display = 'block';
     burgerBtn.classList.add('open');
     bodyTag.classList.add('hiddenScroll');
+    logo.classList.add('filter-white');
   }
 };
 

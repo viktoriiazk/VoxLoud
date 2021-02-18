@@ -186,6 +186,7 @@ h1.logo_SEO {
 
 .logo {
   margin-right: 10px;
+  z-index: 11;
 }
 
 .logo img {
