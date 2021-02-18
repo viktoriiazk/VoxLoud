@@ -34,7 +34,12 @@
                 .btn {
                     @include btn($companyMainColor, $companyMainColor, $white);
                     padding: 14px 28px;
-
+                   
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $white;
+                            color: $mainBoldTextColor;
+                        }
 
                 }
             }
@@ -92,6 +97,13 @@
     text-align: center;
     line-height: 25px;
 }
+
+.tabItem {
+    &:hover span {
+        color: $accentColor;
+    }
+}
+
 
 @media screen and(max-width:600px) {
     .title {
@@ -194,22 +206,10 @@
             }
         }
     }
-
 }
 
-@media(hover: hover) and (pointer: fine) {
-    .btn {
-        &:hover {
-            cursor: pointer;
-            background-color: $white;
-            color: $mainBoldTextColor;
-        }
-    }
+    
+   
 
-    .tabItem {
-
-        &:hover span {
-            color: $accentColor;
-        }
-    }
-}
+      
+    

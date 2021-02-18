@@ -282,6 +282,28 @@ button.burger-menu span:hover {
   filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(200deg) brightness(107%) contrast(100%);
 }
 
+.btn:hover {
+  transition: 0.2s;
+  display: block;
+  padding: 10px 30px;
+  border: 1px solid #FA5757;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #FA5757;
+  cursor: pointer;
+}
+
+.navigation li:hover {
+  transition: 0.2s;
+  color: #FA5757;
+  cursor: pointer;
+}
+
+.header__inner li:hover {
+  transition: 0.2s;
+  color: #FA5757;
+}
+
 .firstScreen {
   overflow: hidden;
 }
@@ -378,6 +400,18 @@ button.burger-menu span:hover {
   box-shadow: 0px 5px 10px 0px #9194A1;
 }
 
+.btn:first-child:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #252B46;
+}
+
+.btn:last-child:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #9194A1;
+}
+
 .features__inner {
   margin-top: 70px;
 }
@@ -419,6 +453,12 @@ button.burger-menu span:hover {
   background-color: #7D8DE3;
   color: #fff;
   padding: 14px 28px;
+}
+
+.features__inner .features__tabs .content__text .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #252B46;
 }
 
 .features__inner .features__tabs .content.active {
@@ -469,6 +509,10 @@ button.burger-menu span:hover {
   margin: 0 auto;
   text-align: center;
   line-height: 25px;
+}
+
+.tabItem:hover span {
+  color: #FA5757;
 }
 
 .download__inner {
@@ -563,6 +607,11 @@ button.burger-menu span:hover {
   position: relative;
 }
 
+.faq__inner .faq__questions .question__item .question__row:hover h6 {
+  color: #FA5757;
+  cursor: pointer;
+}
+
 .faq__inner .faq__questions .question__item:before {
   content: "";
   position: absolute;
@@ -621,6 +670,12 @@ button.burger-menu span:hover {
   color: #fff;
   margin: 48px auto;
   padding: 16px 28px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #252B46;
 }
 
 .contacts {
@@ -700,6 +755,11 @@ button.burger-menu span:hover {
   color: #fff;
   padding: 15px 28px;
   max-width: 130px;
+}
+
+.contacts__inner form .btn:hover {
+  color: #FA5757;
+  border-color: #FA5757;
 }
 
 .contacts .error-mesage {
@@ -1124,75 +1184,6 @@ body.hiddenScroll {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .btn:hover {
-    transition: 0.2s;
-    display: block;
-    padding: 10px 30px;
-    border: 1px solid #FA5757;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #FA5757;
-    cursor: pointer;
-  }
-
-  .navigation li:hover {
-    transition: 0.2s;
-    color: #FA5757;
-    cursor: pointer;
-  }
-
-  .header__inner li:hover {
-    transition: 0.2s;
-    color: #FA5757;
-  }
-
-  .btn:first-child:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #252B46;
-  }
-
-  .btn:last-child:hover {
-    cursor: pointer;
-    background-color: #fff;
-    border-color: #9194A1;
-  }
-
-  .btn:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #252B46;
-  }
-
-  .tabItem:hover span {
-    color: #FA5757;
-  }
-
-  .btn:hover {
-    transition: .2s;
-    background-color: #fff;
-    color: #FA5757;
-    cursor: pointer;
-  }
-
-  .question__row:hover h6 {
-    color: #FA5757;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #252B46;
-  }
-
-  .btn:hover {
-    transition: .2s;
-    background-color: #fff;
-    color: #FA5757;
-    cursor: pointer;
-  }
-
   .footer__right a:hover {
     transition: .2s;
     filter: invert(56%) sepia(47%) saturate(3284%) hue-rotate(325deg) brightness(99%) contrast(98%);

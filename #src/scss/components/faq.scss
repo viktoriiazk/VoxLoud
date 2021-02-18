@@ -13,6 +13,13 @@
 
         .question__item {
             position: relative;
+            .question__row {
+                &:hover h6{
+                    color: $accentColor;
+                    cursor: pointer;
+            
+                }
+            }
 
             &:before {
                 content: "";
@@ -104,16 +111,9 @@
             }
         }
     }
+
 }
 
-@media(hover: hover) and (pointer: fine) {
-    .question__row {
-
-        &:hover h6 {
-            color: $accentColor;
-            cursor: pointer;
-        }
-    }
 
     .btn {
         &:hover {
@@ -122,4 +122,3 @@
             color: $mainBoldTextColor;
         }
     }
-}

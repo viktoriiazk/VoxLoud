@@ -83,6 +83,22 @@
 
 }
 
+.btn:first-child {
+    &:hover {
+        cursor: pointer;
+        background-color: $white;
+        color: $mainBoldTextColor;
+    }
+}
+
+.btn:last-child {
+
+    &:hover {
+        cursor: pointer;
+        background-color: $white;
+        border-color: $mainTextColor;
+    }
+}
 @media screen and(max-width:600px) {
     .firstScreen__inner {
         flex-direction: column-reverse;
@@ -140,23 +156,8 @@
     .btn-m {
         max-width: 150px;
     }
+
 }
 
-@media(hover: hover) and (pointer: fine) {
-    .btn:first-child {
-        &:hover {
-            cursor: pointer;
-            background-color: $white;
-            color: $mainBoldTextColor;
-        }
-    }
 
-    .btn:last-child {
 
-        &:hover {
-            cursor: pointer;
-            background-color: $white;
-            border-color: $mainTextColor;
-        }
-    }
-}

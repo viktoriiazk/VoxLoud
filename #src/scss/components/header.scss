@@ -106,6 +106,25 @@ button.burger-menu span {
   }
 }
 
+.btn:hover {
+  transition: 0.2s;
+  @include btn($accentColor, $transparent, $accentColor);
+  cursor: pointer;
+}
+.navigation {
+  li:hover {
+    transition: 0.2s;
+    color: $accentColor;
+    cursor: pointer;
+  }
+}
+.header__inner {
+  li:hover {
+    transition: 0.2s;
+    color: $accentColor;
+  }
+}
+
 @media screen and (max-width:600px) {
   .header__inner {
     display: flex;
@@ -208,24 +227,5 @@ button.burger-menu span {
   }
 
 }
-@media(hover: hover) and (pointer: fine) {
 
-  .btn:hover {
-    transition: 0.2s;
-    @include btn($accentColor, $transparent, $accentColor);
-    cursor: pointer;
-  }
-  .navigation {
-    li:hover {
-      transition: 0.2s;
-      color: $accentColor;
-      cursor: pointer;
-    }
-  }
-  .header__inner {
-    li:hover {
-      transition: 0.2s;
-      color: $accentColor;
-    }
-  }
-}
+

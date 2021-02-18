@@ -110,15 +110,6 @@
             }
         }
     }
-
+   
 }
 
-@media(hover: hover) and (pointer: fine) {
-
-    .btn:hover {
-        transition: .2s;
-        background-color: $white;
-        color: $accentColor;
-        cursor: pointer;
-    }
-}
