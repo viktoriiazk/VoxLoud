@@ -100,13 +100,18 @@ button.burger-menu span {
 }
 
 .logo {
-  display: block;
+ 
 
   .filter-white {
     filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(200deg) brightness(107%) contrast(100%);
   }
 }
-
+#logo-desk.logo{
+  visibility: hidden;
+}
+#logo-desk.logo.visibility{
+  visibility: visible;
+}
 .btn:hover {
   transition: 0.2s;
   @include btn($accentColor, $transparent, $accentColor);
@@ -145,6 +150,9 @@ button.burger-menu span {
 
     .navigation {
       max-width: initial;
+      .logo {
+        display: block;
+      }
     }
 
     .navigation__list {
@@ -174,7 +182,9 @@ button.burger-menu span {
 
       }
     }
-
+   #toggleMenu.menu__active {
+      display: block;
+    }
     #toggleMenu {
       display: none;
       z-index: 10;
@@ -184,7 +194,6 @@ button.burger-menu span {
       top: 0;
       background: $hoverColor;
       height: 100vh;
-
       .btn {
         border: 3px;
         @include btn($white, $transparent, $white);

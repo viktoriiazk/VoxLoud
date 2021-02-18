@@ -4,23 +4,15 @@ var bodyTag = document.getElementById('body');
 var burgerBtn = document.getElementById('burgerBtn');
 var toggle = document.getElementById('toggleMenu');
 var logo = document.getElementById('logo');
+var logoDesktop = document.getElementById('logo-desk');
 
 var toggleMenu = function toggleMenu() {
-  if (toggle.style.display == 'block') {
-    bodyTag.style.overflowY = "scroll";
-    bodyTag.classList.remove('hiddenScroll');
-    toggle.style.display = 'none';
-    burgerBtn.classList.remove('open');
-    logo.classList.remove('filter-white');
-  } else {
-    toggle.style.display = 'block';
-    burgerBtn.classList.add('open');
-    bodyTag.classList.add('hiddenScroll');
-    logo.classList.add('filter-white');
-  }
+  toggle.classList.toggle('menu__active');
+  burgerBtn.classList.toggle('open');
+  bodyTag.classList.toggle('hiddenScroll');
+  logo.classList.toggle('filter-white');
+  logoDesktop.classList.toggle('visibility');
 };
-
-;
 
 var openTab = function openTab(evt, tabs) {
   var i, tabcontent, tablinks;
